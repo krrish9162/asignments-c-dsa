@@ -1,0 +1,122 @@
+question 01
+#include<iostream>
+using namespace std;   
+int main(){
+    for(int i = 0;i<=100;i++){
+        if(i%2==0)
+        continue;
+        cout<<i<<endl;
+    }
+    return 0;
+}
+
+question 02
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+  int n = 50; 
+  for(int i = 0; i < n; i++)
+  {
+ 
+    //lcm of 3 and 5 is 15 
+    if(i % 15 == 0){
+      cout << i << " ";
+    }
+  }
+  return 0;
+}
+
+question 03
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n; // The number for which the table is to be printed
+
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    cout << "Multiplication Table of " << n << ":" << endl;
+
+    // Loop to print the multiplication table
+    for (int i = 1; i <= 10; ++i) {
+        cout << n << " * " << i << " = " << n * i << endl;
+    }
+
+    return 0;
+}
+
+question 04
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 4; // First term
+    int d = 3; // Common difference
+    int n;     // Number of terms
+
+    cout << "Enter the number of terms: ";
+    cin >> n;
+
+    // Loop to display the AP
+    for (int i = 0; i < n; ++i) {
+        int term = a + i * d;
+        cout << term << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+question 05
+
+#include <iostream>
+#include <cmath> // Include the cmath library for the pow function
+using namespace std;
+
+int main() {
+    int a = 3; // First term
+    int r = 4; // Common ratio
+    int n;     // Number of terms
+
+    cout << "Enter the number of terms: ";
+    cin >> n;
+
+    // Loop to display the GP
+    for (int i = 0; i < n; ++i) {
+        int term = a * pow(r, i); // Calculate each term
+        cout << term << " "; // Print each term
+    }
+    cout << endl; // Move to a new line after printing all terms
+
+    return 0;
+}
+
+
+question 06
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch = 'A'; // Starting with the first uppercase alphabet
+
+    cout << "Uppercase Alphabets and their ASCII values:" << endl;
+    while (ch <= 'Z') {
+        cout << ch << " = " << int(ch) << endl;
+        ch++;
+    }
+
+    ch = 'a'; // Starting with the first lowercase alphabet
+
+    cout << "\nLowercase Alphabets and their ASCII values:" << endl;
+    while (ch <= 'z') {
+        cout << ch << " = " << int(ch) << endl;
+        ch++;
+    }
+
+    return 0;
+}
